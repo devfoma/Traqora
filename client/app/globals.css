@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* Stellar Wallet Connect styles for wallet modal and components */
+@import "../lib/stellar-wallet-connect/styles.css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -20,6 +20,8 @@ import {
 import { ProposalCard } from "@/components/governance/proposal-card"
 import type { ProposalData } from "@/components/governance/proposal-card"
 import { VotingPowerCard } from "@/components/governance/voting-power-card"
+// NEW: import NavWalletButton for the governance page navbar
+import { NavWalletButton } from "@/components/nav-wallet-button"
 
 // Mock proposals data
 const mockProposals: ProposalData[] = [
@@ -157,6 +159,8 @@ export default function GovernancePage() {
                 <Shield className="h-4 w-4 mr-2 text-primary" />
                 Governance
               </Badge>
+              {/* NEW: real wallet connect/disconnect button in governance nav */}
+              <NavWalletButton />
             </div>
           </div>
         </div>
